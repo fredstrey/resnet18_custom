@@ -12,6 +12,10 @@ pip install -r requirements.txt
 
 ### 2. Iniciar o servidor API
 
+Faça download dos pesos no link do drive: https://drive.google.com/file/d/1XVXXRdfn24tpPlNNZw2CaxJxpRs54WFY/view?usp=sharing e salve na pasta "model" do projeto.
+
+Após isso, você poderá rodar o servidor com o comando:
+
 ```bash
 python api.py
 ```
