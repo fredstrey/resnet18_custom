@@ -44,3 +44,17 @@ dataset/
 model/resnet18.weights.h5
 model/*.h5
 model/*.keras
+
+# =====================
+# Python cache
+# =====================
+__pycache__/
+**/__pycache__/
+
+# =====================
+# Outros arquivos temporários
+# =====================
+*.pyc
+*.pyo
+*.pyd
+*.swp
