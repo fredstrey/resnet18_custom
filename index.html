@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Leaf Disease Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☕ Coffee Leaf Disease Classifier</h1>
+            <p class="subtitle">Upload an image to classify coffee leaf diseases</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <p class="upload-text">Click to upload or drag and drop</p>
+                <p class="upload-hint">PNG, JPG, JPEG (MAX. 10MB)</p>
+                <input type="file" id="fileInput" accept="image/*" hidden>
+            </div>
+        </div>
+
+        <div class="result-section" id="resultSection">
+            <div class="image-preview">
+                <img id="previewImage" alt="Uploaded image">
+            </div>
+            
+            <div class="result-card">
+                <div class="result-header">
+                    <h2>Classification Result</h2>
+                    <div class="loader" id="loader"></div>
+                </div>
+                
+                <div class="result-content" id="resultContent">
+                    <div class="result-item">
+                        <span class="result-label">Class:</span>
+                        <span class="result-value" id="classResult">-</span>
+                    </div>
+                    
+                    <div class="result-item">
+                        <span class="result-label">Confidence:</span>
+                        <div class="confidence-container">
+                            <span class="result-value" id="confidenceResult">-</span>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="reset-btn" id="resetBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="1 4 1 10 7 10"></polyline>
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                    </svg>
+                    Upload Another Image
+                </button>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

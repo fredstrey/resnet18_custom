@@ -1,0 +1,46 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# =====================
+# Virtual Environments
+# =====================
+venv/
+.env/
+.env*/
+.venv/
+pip-wheel-metadata/
+
+# =====================
+# Jupyter
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# OS / Editor
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =====================
+# FastAPI
+# =====================
+*.log
+
+# =====================
+# dataset
+# =====================
+dataset/
+
+# =====================
+# model
+# =====================
+model/resnet18.weights.h5
+model/*.h5
+model/*.keras
