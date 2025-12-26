@@ -17,7 +17,7 @@ Faça download dos pesos no link do drive: https://drive.google.com/file/d/1XVXX
 Após isso, você poderá rodar o servidor com o comando:
 
 ```bash
-python api.py
+python app.py
 ```
 
 O servidor estará rodando em `http://localhost:8000`
