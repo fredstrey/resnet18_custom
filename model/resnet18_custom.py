@@ -114,7 +114,6 @@ class ResNet18(Model):
         self.gap = GlobalAveragePooling2D()
         self.fc = Dense(num_classes, activation="softmax")
 
-        # força build para salvar corretamente
         self.build((None, *input_shape))
 
     def call(self, x, training=False):
@@ -129,7 +128,6 @@ class ResNet18(Model):
         x = self.gap(x)
         return self.fc(x)
 
-    # 🔥 SERIALIZAÇÃO
     def get_config(self):
         config = super().get_config()
         config.update({
